@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+img {
+    display: block;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--Very-dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.096);
+}
+
+
+
+
+.container {
+    background-color: var(--dark-blue-card);
+    max-width: 370px;
+    border-radius: .625rem;
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.nft-img {
+    border-radius: .625rem;
+    max-width: 100%;
+}
+
+.container h1 {
+    color: var(--White);
+}
+.container p {
+    color: var(--Soft-blue);
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+}
+
+.icon {
+    color: var(--Cyan);
+    display: flex;
+    gap: .4375rem;
+}
+
+.clock {
+    color: var(--Soft-blue);
+    display: flex;
+    gap: .4375rem;
+}
+
+.icon-clock {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-name {
+    color: var(--White);
+}
+
+.avatar-name {
+    display: flex;
+    align-items: center;
+}
+
+.avatar-name li img {
+    max-width: 35px;
+    border: 1px solid var(--White);
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+.name {
+    color: var(--Soft-blue);
+}
+
+.image-ethereum{
+    position: relative;
+}
+
+.image-ethereum div{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 255, 255, 0.479);
+    border-radius: .625rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.color-name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.container h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: .6s ease;
+}
+
+.image-ethereum div:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+    transition: .5s ease;
+    opacity: 1;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    color: var(--Soft-blue);
+}
+.attribution a { 
+    /* color: hsl(228, 45%, 44%);  */
+    
+    color: var(--Cyan);
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        max-width: 21.25rem;
+        padding: 1.25rem;
+    }
+}
